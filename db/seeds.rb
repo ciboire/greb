@@ -13,7 +13,7 @@ Bootcamp.create(
   :time => "9am - 6pm",
   :message => "Sorry, session filled.",
   :price => 99,
-  :max_students => 40,
+  :max_students => 80,
   :space_available => false,
   :registration_open => true,
   :button_id => '9167570')
@@ -25,7 +25,7 @@ Bootcamp.create(
   :time => "9am - 6pm",
   :message => "Sorry, session filled.",
   :price => 99,
-  :max_students => 40,
+  :max_students => 80,
   :space_available => false,
   :registration_open => true,
   :button_id => '9167570')
@@ -37,7 +37,7 @@ Bootcamp.create(
   :time => "9am - 6pm",
   :message => "Building / Room TBA",
   :price => 99,
-  :max_students => 40,
+  :max_students => 80,
   :space_available => true,
   :registration_open => true,
   :button_id => '9167570')
@@ -49,7 +49,7 @@ Bootcamp.create(
   :time => "9am - 6pm",
   :message => "Registration begins Dec 2009",
   :price => 99,
-  :max_students => 40,
+  :max_students => 80,
   :space_available => true,
   :registration_open => false,
   :button_id => '9167570')
@@ -61,7 +61,7 @@ Bootcamp.create(
   :time => "9am - 6pm",
   :message => "Registration begins Jan 2010",
   :price => 99,
-  :max_students => 40,
+  :max_students => 80,
   :space_available => true,
   :registration_open => false,
   :button_id => '9167570')
@@ -73,7 +73,7 @@ Bootcamp.create(
   :time => "9am - 6pm",
   :message => "Registration begins Feb 2010",
   :price => 99,
-  :max_students => 40,
+  :max_students => 80,
   :space_available => true,
   :registration_open => false,
   :button_id => '9167570')
@@ -85,7 +85,7 @@ Bootcamp.create(
   :time => "9am - 6pm",
   :message => "Registration begins Mar 2010",
   :price => 99,
-  :max_students => 40,
+  :max_students => 80,
   :space_available => true,
   :registration_open => false,
   :button_id => '9167570')
@@ -97,7 +97,7 @@ Bootcamp.create(
   :time => "9am - 6pm",
   :message => "Registration begins Apr 2010",
   :price => 99,
-  :max_students => 40,
+  :max_students => 80,
   :space_available => true,
   :registration_open => false,
   :button_id => '9167570')
@@ -109,7 +109,7 @@ Bootcamp.create(
   :time => "9am - 6pm",
   :message => "Registration begins May 2010",
   :price => 99,
-  :max_students => 40,
+  :max_students => 80,
   :space_available => true,
   :registration_open => false,
   :button_id => '9167570')
@@ -121,7 +121,7 @@ Bootcamp.create(
   :time => "9am - 6pm",
   :message => "Registration begins Jun 2010",
   :price => 99,
-  :max_students => 40,
+  :max_students => 80,
   :space_available => true,
   :registration_open => false,
   :button_id => '9167570')
@@ -133,7 +133,7 @@ Bootcamp.create(
   :time => "9am - 6pm",
   :message => "Registration begins Jul 2010",
   :price => 99,
-  :max_students => 40,
+  :max_students => 80,
   :space_available => true,
   :registration_open => false,
   :button_id => '9167570'
@@ -146,7 +146,7 @@ Bootcamp.create(
   :time => "9am - 6pm",
   :message => "Registration begins Aug 2010",
   :price => 99,
-  :max_students => 40,
+  :max_students => 80,
   :space_available => true,
   :registration_open => false,
   :button_id => '9167570'
