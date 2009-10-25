@@ -85,8 +85,8 @@ class BootcampsController < ApplicationController
   def thanks
     session[:section] = 'register'
 
-    bad_transaction = 'An error occurred while retrieving payment information from PayPal.<br />' \
-    + 'Please contact support@vegaphysics.com for assistance.'
+    bad_transaction = '<center>An error occurred while retrieving payment information from PayPal.<br />' \
+    + 'Please contact support@grebootcamp.com for assistance.</center>'
 
     tx_token = params['tx']
 
@@ -154,7 +154,7 @@ class BootcampsController < ApplicationController
     # Save a copy of the transaction in case there is a dispute
     Payment.create(:description => description, :student_id => student_id, :bootcamp_id => bootcamp_id,
       :amount => payment_gross, :tx_token => tx_token)
-    flash[:success] = 'Thank you for your payment!  Your registration is complete.'
+    flash[:notice] = '<center>Thank you for your payment!  Your registration is complete.</center>'
     
     # Update Student table to reflect successful transaction
     @student = Student.find(student_id)

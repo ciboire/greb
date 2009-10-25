@@ -1,13 +1,59 @@
-  
-  <% if flash[:error] %>
-    <div class="error"><%= flash[:error] %></div>
-  <% else %>
-  
-    <% if flash[:success] %>
-      <div class="success"><%= flash[:success] %></div>
-    <% end %>
+<div id="contentArea" class="subpage">
 
-      <%= render :partial => "bootcamps/confirmation_display_blurb", :locals => {:student_id => @student.id, :bootcamp_id => @bootcamp.id} %>
+  <div class="contentWrap container_12">
+    <div class="grid_9">
+      <h2>GRE Bootcamp Registration Confirmation</h2>
+    </div>
 
-  <% end %>
-  
+    <div class="grid_3">
+      <h2>Contact Info</h2>
+    </div>
+
+    <div class="grid_9 content-area content subpageContentBorder border-right">
+      
+      <% if flash[:notice] %>
+      <div class="success"><%= flash[:notice] %></div>
+      
+       <fieldset>
+          <legend>Details</legend>
+            <table style="margin-top: -10px">
+              <tr><td><strong>Name:</strong></td><td><%= @student.bootcamp.city %></td></tr>
+              <tr><td><strong>City:</strong></td><td><%= @student.bootcamp.city %></td></tr>
+              <tr><td><strong>Date:</strong></td><td><%= @student.bootcamp.date %></td></tr>
+              <tr><td><strong>Time:</strong></td><td><%= @student.bootcamp.time %></td></tr>
+              <tr><td>&nbsp;</td><td></td></tr>
+              <tr><td colspan="2"><i><%=@student.bootcamp.message-%></i></td></tr>
+            </table>
+        </fieldset>
+      
+      <% end %>
+
+      <% if flash[:error] %>
+      <div class="error"><%= flash[:error] %></div>
+      <% end %>
+
+      
+
+
+
+    </div>
+
+    <div class="grid_3 mediaArea sidebar subpageContentBorder">
+
+      <div class="media-block">
+        <p>
+        <strong>
+        GRE Bootcamp Math Review<br >
+        support@grebootcamp.com<br />
+        http://grebootcamp.com
+        </strong>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="clear"></div>
+
+  </div> <!-- END #contentWrap -->
+
+</div> <!-- END #CONTENTAREA -->
