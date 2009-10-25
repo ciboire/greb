@@ -80,7 +80,7 @@
             <% if session[:section] == 'register' %>
             <span>Register</span>
             <% else %>
-            <%= link_to "Register", register_url(1) %>   <!-- hardcode bootcamp #1 (San Francisco) for main menu -->
+            <%= link_to "Register", register_url(3) %>   <!-- hardcode bootcamp #1 (San Francisco) for main menu -->
             <% end %>
           </li>
           <li <% if session[:section] == 'contact' %> class="current" <% end %>>
@@ -106,7 +106,7 @@
       &nbsp;&nbsp;|&nbsp;&nbsp;
       <%= link_to "Overview", overview_url %>
       &nbsp;&nbsp;|&nbsp;&nbsp;
-      <%= link_to "Register", register_url(1) %>
+      <%= link_to "Register", register_url(3) %>
       &nbsp;&nbsp;|&nbsp;&nbsp;
       <%= link_to "Contact", contact_url %>
 
