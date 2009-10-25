@@ -1,0 +1,79 @@
+<div id="contentArea" class="subpage">
+
+  <div class="contentWrap container_12">
+    <div class="grid_9">
+      <h2>GRE Bootcamp Registration</h2>
+    </div>
+
+    <div class="grid_3">
+      <h2>Contact Info</h2>
+    </div>
+
+    <div class="grid_9 content-area content subpageContentBorder border-right">
+
+       <fieldset>
+          <legend>Review Session Details</legend>
+            <table style="margin-top: -10px">
+              <tr><td><strong>City:</strong></td><td><%= @student.bootcamp.city %></td></tr>
+              <tr><td><strong>Date:</strong></td><td><%= @student.bootcamp.date %></td></tr>
+              <tr><td><strong>Time:</strong></td><td><%= @student.bootcamp.time %></td></tr>
+              <tr><td><strong>Price:&nbsp;&nbsp;&nbsp;</strong></td><td><%= "$#{@student.bootcamp.price.to_i}" %></td></tr>
+              <tr><td>&nbsp;</td><td></td></tr>
+              <tr><td colspan="2"><i><%=@student.bootcamp.message-%></i></td></tr>
+            </table>
+        </fieldset>
+
+      <% form_tag('javascript:void(0)', :id => "update_form", :class => 'horizontal') do %>
+        <fieldset>
+          <legend>Your Information</legend>
+          <p class="field"><label><strong>* Your Name:</strong></label><%= text_field_tag 'name', '', :class => 'text' %></p>
+          <p class="field"><label><strong>* Your Email:</strong></label><%= text_field_tag 'email', '', :class => 'text' %></p>
+          <%= hidden_field_tag "student_id", @student.id %>
+        </fieldset>
+      <% end %>
+      
+      <fieldset>
+          <legend>PayPal</legend>
+          <p class="field">
+            You will be taken to the PayPal site of our parent company, VegaPhysics LLC.  You may request a full refund
+            of your purchase up to 3 weeks prior to the review session, after which no refunds will be issued.
+            <div class="pay">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="custom" value="<%= @student.id.to_s + " " + @student.bootcamp.id.to_s -%>" />
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value=<%="#{@student.bootcamp.button_id}"-%>>
+                <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>  
+            </div>
+        </fieldset>
+
+
+    </div>
+
+    <div class="grid_3 mediaArea sidebar subpageContentBorder">
+
+      <div class="media-block">
+        <p>
+        <strong>
+        GRE Bootcamp Math Review<br >
+        support@grebootcamp.com<br />
+        http://grebootcamp.com
+        </strong>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="clear"></div>
+
+  </div> <!-- END #contentWrap -->
+
+</div> <!-- END #CONTENTAREA -->
+
+
+
+
+<%= observe_form :update_form,
+:frequency => 0,
+:url => {:action=>'update_reg_contact_info', :only_path => false} %>

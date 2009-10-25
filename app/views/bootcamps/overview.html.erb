@@ -1,0 +1,78 @@
+<div id="contentArea" class="subpage">
+
+	<div class="contentWrap container_12">
+    <div class="grid_9 tourGrid">
+      <h2>Review Dates</h2>
+        <%= link_to(image_tag("RegisterForSanFranciscoJan16.png", :mouseover => "RegisterForSanFranciscoJan16_selected.png",
+        :onmousedown => "this.src='/images/RegisterForSanFranciscoJan16_mousedown.png'", :border => "0px"), register_url(1),
+        :title => "Register for San Francisco - Jan 16", :class => "print-button") %>
+    </div>
+        
+    <div class="grid_3">
+      <h2>Random Stuff</h2>
+    </div>
+        
+    <div class="grid_12 redBar">
+      <div class="status">Status</div>
+      <div class="date">Date</div>
+      <div class="location">Location</div>
+    </div>
+        
+  	<div class="grid_5 tourArea">
+  	  <%= render :partial => 'schedule', :locals => {:bootcamp_min => 1, :bootcamp_max => 12} %>
+  	</div>
+        
+    <div class="grid_4 border-right content">
+        	
+    <p><strong>
+    You can't BS your way through math.
+    </strong></p>
+            
+    <p>
+      Either you know the math or you don't.  If it's been a while since you've taken a math course (maybe as far back as high school!), 
+      the GRE Quantitative section could mean trouble.  The GRE isn't just some final exam in some obscure course; it's often
+      <strong>THE</strong> most important factor in your applications, and messing up even one section could jeopardize your
+      entire career.  If graphs, equations and trigonometry cause knots in your stomach, you need to confront these fears as soon
+      as possible.  The games are over, and your future is at stake.
+    </p>
+    
+    <p><strong>
+    Get serious about the GRE.
+    </strong></p>
+    
+    <p>
+      Our review sessions are all math.  We don't dilute the class with anything else, just 100%
+      GRE math with the sole purpose of conquering the Quantitative section of the GRE.  The course is intense, and in the spirit 
+      of a true bootcamp, you'll be pushed to the limit.  But you'll also come out
+      enormously better prepared to handle GRE math questions than you've ever been in your life.  
+      When you register for a Bootcamp Math Review, you're telling us that you take graduate school very seriously, and as such we
+      believe nothing short of first-class instruction is acceptable.
+    </p>
+    
+    <p><strong>
+      Learn from the best.
+    </strong></p>
+    
+    <p>
+      All of our instructors possess at least a Master's or Doctorate in mathematics, physics, or computer science.  They also
+      have several years' experience teaching at the undergraduate level, and speak English with native fluency.  In addition, every
+      review session is guaranteed to follow the GRE Bootcamp Math Review syllabus.
+    </p>
+    
+    <p><strong>
+    Class size is limited, so register early.
+    </strong></p>          
+
+        
+  </div>
+        
+  <div class="grid_3 mediaArea sidebar">
+
+  <%= render :partial => "media" %>
+</div>
+
+<div class="clear"></div>
+
+</div> <!-- END #contentWrap -->
+
+</div> <!-- END #CONTENTAREA -->

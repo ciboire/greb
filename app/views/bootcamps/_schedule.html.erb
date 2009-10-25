@@ -1,0 +1,29 @@
+<% Bootcamp.find(:all, :order => :id)[bootcamp_min-1..bootcamp_max].each do |bootcamp| %>
+  
+  <div class="tourdate-block">  
+    <% if bootcamp.space_available %>
+      <% if bootcamp.registration_open %>
+        <div class="status">
+          <%= link_to(image_tag("register.png", :mouseover => "register_selected.png",
+          :onmousedown => "this.src='/images/register_mousedown.png'", :border => "0px", :class => "register"), 
+          register_url(bootcamp.id), :title => "Register now!") %>
+        </div>
+      <% else %>
+        <div class="status">
+          <span class="remind-me">
+        	  <%= link_to(image_tag("remind_me.png", :mouseover => "remind_me_selected.png", 
+        	  :onmousedown => "this.src='/images/remind_me_mousedown.png'", :border => "0px", :class => "register"),
+        	  reminder_url(bootcamp.id), :title => "Email a reminder...") %>
+          </span>
+        </div>
+      <% end %>
+    <% else %>  
+      <div class="status"><span class="sold-out">Sorry, session filled.</span></div>
+    <% end%>
+        
+    <div class="date"><strong><%= bootcamp.date -%><br /><%= bootcamp.time -%></strong></div>
+    <div class="location"><strong><%= bootcamp.city -%></strong><br /><%= bootcamp.message %></div>
+    <span class="clear"></span>
+  </div>
+  
+<% end %>

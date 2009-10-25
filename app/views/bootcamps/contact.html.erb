@@ -1,0 +1,67 @@
+<div id="contentArea" class="subpage">
+
+	<div class="contentWrap container_12">
+    	<div class="grid_9">
+        	<h2>Contact Us</h2>
+        </div>
+        
+        <div class="grid_3">
+        	<h2>Contact Info</h2>
+        </div>
+        
+  		<div class="grid_9 content-area content subpageContentBorder border-right">
+  		  
+  		  <% if flash[:notice] %>
+           <div class="success"><%= flash[:notice] %></div>
+         <% end %>
+
+         <% if flash[:error] %>
+           <div class="error"><%= flash[:error] %></div>
+         <% end %>
+        
+                
+           <% form_for(:contact, :url => {:controller => :bootcamps, :action => :deliver_contact}, :html => {:class => "horizontal"}) do |form| %>
+
+                    <fieldset>
+                    	<legend>Your Information</legend>
+                    	 <p class="field"><label><strong>* Your Name:</strong></label><%= form.text_field 'name', :class => 'text' %></p>
+                        <p class="field"><label><strong>* Your Email Address:</strong></label><%= form.text_field 'email', :class => 'text' %></p>
+                    
+                   	</fieldset>
+                    
+                    <fieldset>
+                    	<legend>Your Message</legend>
+                    	<p class="field"><label><strong>* Subject:</strong></label><%= form.text_field 'subject', :class => 'text' %></p>
+                        <p class="field">
+                           <p class="field"><label><strong>* Body:</strong></label><%= form.text_area 'body', :class => 'text', :cols => 60, :rows => 6 %></p>
+                        </p>
+                        <p class="buttons">
+                          <%= form.submit "SEND MESSAGE", :class => "button" %>
+                        </p>
+
+                   	</fieldset>
+                    
+          		<% end %>
+        	
+            
+        </div>
+        
+        <div class="grid_3 mediaArea sidebar subpageContentBorder">
+        	
+           <div class="media-block">
+             <p>
+               <strong>
+               GRE Bootcamp Math Review<br >
+               support@grebootcamp.com<br />
+               http://grebootcamp.com
+               </strong>
+             </p>
+           </div>
+            
+      	</div>
+        
+        <div class="clear"></div>
+        
+    </div> <!-- END #contentWrap -->
+
+</div> <!-- END #CONTENTAREA -->

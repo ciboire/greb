@@ -1,0 +1,6 @@
+Dear <%= Student.find(@student_id).name -%>,
+<br /><br />
+<%= render :partial => "bootcamps/confirmation_blurb", :locals => {:student_id => @student_id, :bootcamp_id => @bootcamp_id} %>
+<br /><br />
+Registration
+GRE Bootcamp Math Review

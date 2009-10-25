@@ -1,0 +1,68 @@
+<div id="contentArea" class="subpage">
+
+  <div class="contentWrap container_12">
+    <div class="grid_9">
+      <h2>Contact Us</h2>
+    </div>
+
+    <div class="grid_3">
+      <h2>Contact Info</h2>
+    </div>
+
+    <div class="grid_9 content-area content subpageContentBorder border-right">
+
+      <% if flash[:notice] %>
+      <div class="success"><%= flash[:notice] %></div>
+      <% end %>
+
+      <% if flash[:error] %>
+      <div class="error"><%= flash[:error] %></div>
+      <% end %>
+
+      <fieldset>
+        <legend>Review Session Details</legend>
+        <table style="margin-top: -10px">
+          <tr><td><strong>City:</strong></td><td><%= @bootcamp.city %></td></tr>
+          <tr><td><strong>Date:</strong></td><td><%= @bootcamp.date %></td></tr>
+          <tr><td><strong>Time:&nbsp;&nbsp;&nbsp;</strong></td><td><%= @bootcamp.time %></td></tr>
+        </table>
+      </fieldset>
+
+
+      <% form_for(:reminder, :url => {:controller => :bootcamps, :action => :deliver_reminder}, :html => {:class => "horizontal"}) do |form| %>
+
+      <fieldset>
+        <legend>Your Information</legend>
+        <p class="field"><label><strong>* Your Name:</strong></label><%= form.text_field 'name', :class => 'text' %></p>
+        <p class="field"><label><strong>* Your Email Address:</strong></label><%= form.text_field 'email', :class => 'text' %></p>
+        <%= hidden_field_tag "bootcamp_id", @bootcamp.id %>
+        <p class="buttons">
+          <%= form.submit "REMIND ME", :class => "button" %>
+        </p>
+
+      </fieldset>
+
+      <% end %>
+
+
+    </div>
+
+    <div class="grid_3 mediaArea sidebar subpageContentBorder">
+
+      <div class="media-block">
+        <p>
+          <strong>
+            GRE Bootcamp Math Review<br >
+            support@grebootcamp.com<br />
+            http://grebootcamp.com
+          </strong>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="clear"></div>
+
+  </div> <!-- END #contentWrap -->
+
+</div> <!-- END #CONTENTAREA -->

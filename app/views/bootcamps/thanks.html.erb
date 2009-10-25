@@ -1,0 +1,13 @@
+  
+  <% if flash[:error] %>
+    <div class="error"><%= flash[:error] %></div>
+  <% else %>
+  
+    <% if flash[:success] %>
+      <div class="success"><%= flash[:success] %></div>
+    <% end %>
+
+      <%= render :partial => "bootcamps/confirmation_display_blurb", :locals => {:student_id => @student.id, :bootcamp_id => @bootcamp.id} %>
+
+  <% end %>
+  
