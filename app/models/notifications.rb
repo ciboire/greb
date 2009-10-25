@@ -1,7 +1,7 @@
 class Notifications < ActionMailer::Base
   def contact(email_params)
     subject       email_params[:subject]
-    recipients    "brian@thorndyke.org"
+    recipients    "support@grebootcamp.com"
     from          email_params[:email]
     content_type  'text/html'
     sent_on       Time.now
@@ -19,7 +19,7 @@ class Notifications < ActionMailer::Base
   
   def reminder(email_params, bootcamp_id)
     subject       "Remind #{email_params[:name]} about Bootcamp #{bootcamp_id}"
-    recipients    "brian@thorndyke.org"
+    recipients    "support@grebootcamp.com"
     from          email_params[:email]
     content_type  'text/html'
     sent_on       Time.now
