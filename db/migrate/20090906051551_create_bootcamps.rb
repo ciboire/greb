@@ -10,6 +10,7 @@ class CreateBootcamps < ActiveRecord::Migration
       t.integer :max_students
       t.boolean :space_available
       t.boolean :registration_open
+      t.string :timepoint
       t.timestamps
     end
   end

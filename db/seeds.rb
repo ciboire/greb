@@ -7,7 +7,6 @@
 #   Major.create(:name => 'Daley', :city => cities.first)
 
 Bootcamp.create(
-  :id => 1000,
   :city => "San Francisco, CA",
   :date => "Sun, Nov 8",
   :time => "9am - 6pm",
@@ -16,10 +15,10 @@ Bootcamp.create(
   :max_students => 80,
   :space_available => false,
   :registration_open => true,
-  :button_id => '9167570')
+  :button_id => '9167570',
+  :timepoint => '2009-11-08')
   
 Bootcamp.create(
-  :id => 2000,
   :city => "Las Vegas, NV",
   :date => "Sun, Dec 13",
   :time => "9am - 6pm",
@@ -28,10 +27,10 @@ Bootcamp.create(
   :max_students => 80,
   :space_available => false,
   :registration_open => true,
-  :button_id => '9167570')
+  :button_id => '9167570',
+  :timepoint => '2009-12-13')
 
 Bootcamp.create(
-  :id => 3000,
   :city => "San Francisco, CA",
   :date => "Sat, Jan 16",
   :time => "9am - 6pm",
@@ -40,10 +39,10 @@ Bootcamp.create(
   :max_students => 80,
   :space_available => true,
   :registration_open => true,
-  :button_id => '9167570')
+  :button_id => '9167570',
+  :timepoint => '2010-01-16')
   
 Bootcamp.create(
-  :id => 4000,
   :city => "Madison, WI",
   :date => "Sat, Feb 20",
   :time => "9am - 6pm",
@@ -52,10 +51,10 @@ Bootcamp.create(
   :max_students => 80,
   :space_available => true,
   :registration_open => false,
-  :button_id => '9167570')
+  :button_id => '9167570',
+  :timepoint => '2010-02-20')
 
 Bootcamp.create(
-  :id => 5000,
   :city => "Boston, MA",
   :date => "Sun, Mar 21",
   :time => "9am - 6pm",
@@ -64,10 +63,10 @@ Bootcamp.create(
   :max_students => 80,
   :space_available => true,
   :registration_open => false,
-  :button_id => '9167570')
+  :button_id => '9167570',
+  :timepoint => '2010-03-21')
 
 Bootcamp.create(
-  :id => 6000,
   :city => "Miami, FL",
   :date => "Sat, Apr 10",
   :time => "9am - 6pm",
@@ -76,10 +75,10 @@ Bootcamp.create(
   :max_students => 80,
   :space_available => true,
   :registration_open => false,
-  :button_id => '9167570')
+  :button_id => '9167570',
+  :timepoint => '2010-04-10')
   
 Bootcamp.create(
-  :id => 7000,
   :city => "Houston, TX",
   :date => "Sat, May 15",
   :time => "9am - 6pm",
@@ -88,10 +87,10 @@ Bootcamp.create(
   :max_students => 80,
   :space_available => true,
   :registration_open => false,
-  :button_id => '9167570')
+  :button_id => '9167570',
+  :timepoint => '2010-05-15')
   
 Bootcamp.create(
-  :id => 8000,
   :city => "Toronto, Canada",
   :date => "Sat, Jun 13",
   :time => "9am - 6pm",
@@ -100,10 +99,10 @@ Bootcamp.create(
   :max_students => 80,
   :space_available => true,
   :registration_open => false,
-  :button_id => '9167570')
+  :button_id => '9167570',
+  :timepoint => '2010-06-13')
 
 Bootcamp.create(
-  :id => 9000,
   :city => "Las Vegas, NV",
   :date => "Sun, Jul 12",
   :time => "9am - 6pm",
@@ -112,10 +111,10 @@ Bootcamp.create(
   :max_students => 80,
   :space_available => true,
   :registration_open => false,
-  :button_id => '9167570')
+  :button_id => '9167570',
+  :timepoint => '2010-07-12')
   
 Bootcamp.create(
-  :id => 10000,
   :city => "Vancouver, Canada",
   :date => "Sun, Aug 16",
   :time => "9am - 6pm",
@@ -124,10 +123,10 @@ Bootcamp.create(
   :max_students => 80,
   :space_available => true,
   :registration_open => false,
-  :button_id => '9167570')
+  :button_id => '9167570',
+  :timepoint => '2010-08-16')
   
 Bootcamp.create(
-  :id => 11000,
   :city => "Mexico City, Mexico",
   :date => "Sat, Sep 13",
   :time => "9am - 6pm",
@@ -136,11 +135,10 @@ Bootcamp.create(
   :max_students => 80,
   :space_available => true,
   :registration_open => false,
-  :button_id => '9167570'
-)
+  :button_id => '9167570',
+  :timepoint => '2010-09-13')
 
 Bootcamp.create(
-  :id => 12000,
   :city => "Chicago, IL",
   :date => "Sun, Oct 11",
   :time => "9am - 6pm",
@@ -149,6 +147,6 @@ Bootcamp.create(
   :max_students => 80,
   :space_available => true,
   :registration_open => false,
-  :button_id => '9167570'
-)
+  :button_id => '9167570',
+  :timepoint => '2010-10-11')
 

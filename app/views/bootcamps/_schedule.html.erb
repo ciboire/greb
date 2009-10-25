@@ -1,4 +1,4 @@
-<% Bootcamp.find(:all, :order => :id)[bootcamp_min-1..bootcamp_max].each do |bootcamp| %>
+<% Bootcamp.find(:all, :order => :timepoint)[bootcamp_min-1..bootcamp_max].each do |bootcamp| %>
   
   <div class="tourdate-block">  
     <% if bootcamp.space_available %>
