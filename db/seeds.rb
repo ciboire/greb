@@ -7,7 +7,7 @@
 #   Major.create(:name => 'Daley', :city => cities.first)
 
 Bootcamp.create(
-  :id => 1,
+  :id => 1000,
   :city => "San Francisco, CA",
   :date => "Sun, Nov 8",
   :time => "9am - 6pm",
@@ -19,7 +19,7 @@ Bootcamp.create(
   :button_id => '9167570')
   
 Bootcamp.create(
-  :id => 2,
+  :id => 2000,
   :city => "Las Vegas, NV",
   :date => "Sun, Dec 13",
   :time => "9am - 6pm",
@@ -31,7 +31,7 @@ Bootcamp.create(
   :button_id => '9167570')
 
 Bootcamp.create(
-  :id => 3,
+  :id => 3000,
   :city => "San Francisco, CA",
   :date => "Sat, Jan 16",
   :time => "9am - 6pm",
@@ -43,7 +43,7 @@ Bootcamp.create(
   :button_id => '9167570')
   
 Bootcamp.create(
-  :id => 4,
+  :id => 4000,
   :city => "Madison, WI",
   :date => "Sat, Feb 20",
   :time => "9am - 6pm",
@@ -55,7 +55,7 @@ Bootcamp.create(
   :button_id => '9167570')
 
 Bootcamp.create(
-  :id => 5,
+  :id => 5000,
   :city => "Boston, MA",
   :date => "Sun, Mar 21",
   :time => "9am - 6pm",
@@ -67,7 +67,7 @@ Bootcamp.create(
   :button_id => '9167570')
 
 Bootcamp.create(
-  :id => 6,
+  :id => 6000,
   :city => "Miami, FL",
   :date => "Sat, Apr 10",
   :time => "9am - 6pm",
@@ -79,7 +79,7 @@ Bootcamp.create(
   :button_id => '9167570')
   
 Bootcamp.create(
-  :id => 7,
+  :id => 7000,
   :city => "Houston, TX",
   :date => "Sat, May 15",
   :time => "9am - 6pm",
@@ -91,7 +91,7 @@ Bootcamp.create(
   :button_id => '9167570')
   
 Bootcamp.create(
-  :id => 8,
+  :id => 8000,
   :city => "Toronto, Canada",
   :date => "Sat, Jun 13",
   :time => "9am - 6pm",
@@ -103,7 +103,7 @@ Bootcamp.create(
   :button_id => '9167570')
 
 Bootcamp.create(
-  :id => 9,
+  :id => 9000,
   :city => "Las Vegas, NV",
   :date => "Sun, Jul 12",
   :time => "9am - 6pm",
@@ -115,7 +115,7 @@ Bootcamp.create(
   :button_id => '9167570')
   
 Bootcamp.create(
-  :id => 10,
+  :id => 10000,
   :city => "Vancouver, Canada",
   :date => "Sun, Aug 16",
   :time => "9am - 6pm",
@@ -127,7 +127,7 @@ Bootcamp.create(
   :button_id => '9167570')
   
 Bootcamp.create(
-  :id => 11,
+  :id => 11000,
   :city => "Mexico City, Mexico",
   :date => "Sat, Sep 13",
   :time => "9am - 6pm",
@@ -140,7 +140,7 @@ Bootcamp.create(
 )
 
 Bootcamp.create(
-  :id => 12,
+  :id => 12000,
   :city => "Chicago, IL",
   :date => "Sun, Oct 11",
   :time => "9am - 6pm",
