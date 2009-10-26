@@ -149,4 +149,29 @@ Bootcamp.create(
   :registration_open => false,
   :button_id => '9167570',
   :timepoint => '2010-10-11')
+  
+Bootcamp.create(
+  :city => "Los Angeles, CA",
+  :date => "Sat, Jan 23",
+  :time => "9am - 6pm",
+  :message => "Building / Room TBA",
+  :price => 99,
+  :max_students => 80,
+  :space_available => true,
+  :registration_open => true,
+  :button_id => '9167570',
+  :timepoint => '2010-01-23')
+  
+Bootcamp.create(
+  :city => "Calgary, Canada",
+  :date => "Sat, Dec 19",
+  :time => "9am - 6pm",
+  :message => "Building / Room TBA",
+  :price => 99,
+  :max_students => 80,
+  :space_available => true,
+  :registration_open => true,
+  :button_id => '9167570',
+  :timepoint => '2009-12-19')
+
 
