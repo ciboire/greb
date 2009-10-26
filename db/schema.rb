@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20090908181146) do
     t.integer  "max_students"
     t.boolean  "space_available"
     t.boolean  "registration_open"
+    t.string   "timepoint"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
